@@ -1,0 +1,22 @@
+<link rel="stylesheet" type="text/css" href="/node_modules/primeicons/primeicons.css" />
+<link rel="stylesheet" type="text/css" href="/node_modules/primeng/resources/themes/nova-light/theme.css" />
+<link rel="stylesheet" type="text/css" href="/node_modules/primeng/resources/primeng.min.css" />
+
+<p-table [value]="Cars">
+        <ng-template pTemplate="header">
+            <tr>
+                <th>Vin</th>
+                <th>Year</th>
+                <th>Brand</th>
+                <th>Color</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-car>
+            <tr >
+                <td>{{car.vin}}</td>
+                <td>{{car.year}}</td>
+                <td>{{car.brand}}</td>
+                <td>{{car.color}}</td>
+            </tr>
+        </ng-template>
+    </p-table>
